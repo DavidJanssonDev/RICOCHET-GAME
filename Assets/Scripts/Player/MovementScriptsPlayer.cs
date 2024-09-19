@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 
 public class MovementScriptsPlayer : MonoBehaviour
 {
+    public PlayerClass playerClass;
     public float moveSpeed;
     public Rigidbody2D rb;
     Vector2 moveDirection = Vector2.zero;
@@ -15,6 +16,10 @@ public class MovementScriptsPlayer : MonoBehaviour
     public InputAction move;
     public InputAction fire;
 
+    private void Start()
+    {
+        moveSpeed = playerClass.moveSpeed;
+    }
 
     private void Awake()
     {
