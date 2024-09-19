@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu]
 public class PlayerClass : ScriptableObject
 {
-    public string name;
+    public new string name;
     public float health;
     public float moveSpeed;
     public Color color;
