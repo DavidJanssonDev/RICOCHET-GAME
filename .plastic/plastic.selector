@@ -1,0 +1,4 @@
+repository "RICOCHET-GAME@Ricochet_Game@cloud"
+  path "/"
+    br "/main"
+    co "/main"
